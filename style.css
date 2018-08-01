@@ -1,0 +1,17 @@
+html, body {
+    background-color: blue;
+    width: 980px;
+    height: auto;
+}
+    
+header {
+    display: block;
+}
+  
+a {
+    color: white;
+}
+
+p {
+    color: white;
+}
