@@ -1,17 +1,24 @@
 html, body {
-    background-color: blue;
-    width: 980px;
+    background-color: #333;
+    color: #fff;
+    font: normal 16px Arial, Helvetica, sana-serif;
+    width: 960px;
     height: auto;
-}
-    
-header {
-    display: block;
-}
-  
-a {
-    color: white;
+    margin: auto;
+    border: solid 1px;
 }
 
-p {
-    color: white;
+.container{
+    width: 90%;
+    margin: auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+label {
+    float: left;
+    width: 150px;
+    text-align: right;
+    margin-right: 0.5em;
 }
