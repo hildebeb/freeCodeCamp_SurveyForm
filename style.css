@@ -5,20 +5,61 @@ html, body {
     width: 960px;
     height: auto;
     margin: auto;
-    border: solid 1px;
 }
 
 .container{
-    width: 90%;
+    width: auto;
+    height: auto;
     margin: auto;
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
+}
+
+#title, #description{
+    border: solid 1px;
+    background-color: greenyellow;
+}
+
+#title h1 {
     text-align: center;
 }
 
 label {
+    display: block;
     float: left;
-    width: 150px;
+    width: 10em;
     text-align: right;
-    margin-right: 0.5em;
+    margin-right: 1em;
+}
+
+.maxl{
+    margin: 25px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+
+
+.radio {
+    color: #999;
+    font-size: 15px;
+    position: relative;
+}
+
+.radio span{
+    position:relative;
+    /*padding-left:20px;*/
+}
+  
+.checkbox {
+    color: #999;
+    font-size: 15px;
+    position: relative;
+}
+    
+.checkbox span{
+    position:relative;
+    /*padding-left:20px;*/
 }

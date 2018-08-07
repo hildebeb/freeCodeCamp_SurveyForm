@@ -10,6 +10,7 @@
         <title>Survey Form</title>
     </head>
     <body>
+        <div class="container">
         <div id="title">
             <h1>Customer Satisfaction Survey</h1>
         </div>
@@ -23,7 +24,7 @@
                     <input id="name-label" type="text" value="Name" name="Name"><br><br>
                 </div>
                 <div id="email">
-                    <label>Valid Email Address:</label>
+                    <label>Email Address:</label>
                     <input id="email-label" type="email" value="Email Address" name="Email Address"><br><br>
                 </div>
                 <div id="number">
@@ -33,16 +34,29 @@
             </div>
             
             <div id="dropdown">
-                <label>Please rate with one of the below selections of your opinion of the freeCodeCamp content:</label> <br><br>
+                <label>Please rate the freeCodeCamp content:</label> <br><br>
                 <select name="rating">
                     <option value="excellent">Excellent</option>
                     <option value="good">Good</option>
                     <option value="poor">Poor</option>
                 </select>
+                <br><br>
             </div>
-            <div>
-                <label>Radio Buttons</label>
-                <input type="radio" name=""
+            <div class="maxl">
+                <label>Radio Buttons</label><br>
+                <label class="radio inline"><input type="radio" name="human" value="male"><span>Male</span></label>
+                <label class="radio inline"><input type="radio" name="human" value="female"><span>Female</span></label>
+                <label class="radio inline"><input type="radio" name="human" value="adult"><span>Adult</span></label>
+                <label class="radio inline"><input type="radio" name="human" value="child"><span>Child</span></label>
+                
+            </div>
+            <div class="maxl">
+                <label>Checkboxes</label><br>
+                <label class="checkbox inline"><input type="checkbox" name="" value="dog"><span>Dog</span></label>
+                <label class="checkbox inline"><input type="checkbox" name="" value="cat"><span>Cat</span></label>
+                <label class="checkbox inline"><input type="checkbox" name="" value="bird"><span>Bird</span></label>
+                <label class="checkbox inline"><input type="checkbox" name="" value="fish"><span>Fish</span></label>
+                
             </div>
             
             
@@ -50,5 +64,6 @@
 
 
         </form>
+        </div>
     </body>
 </html>
