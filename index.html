@@ -10,60 +10,74 @@
         <title>Survey Form</title>
     </head>
     <body>
-        <div class="container">
-        <div id="title">
-            <h1>Customer Satisfaction Survey</h1>
-        </div>
-        <div id="description">
-            <p>You are very important to us.  Please help us serve you better by taking a few minutes to tell us about the service you received today.  Fill in all personal information and then answer the following questions.</p>
-        </div>
-        <form id="survey-form">
-            <div id="contact-details">
-                <div id="name">
-                    <label>Name:</label>
-                    <input id="name-label" type="text" value="Name" name="Name"><br><br>
+        <div class="flex-container">
+                <div id="title-container">
+                    <div>
+                        <h1 id="title">Customer Satisfaction Survey</h1>
+                    </div>
+                    <div>
+                        <p id="description">You are very important to us.  Please help us serve you better by taking a few minutes to tell us about the service you received today.  Fill in all personal information and then answer the following questions.</p>
+                    </div>
                 </div>
-                <div id="email">
-                    <label>Email Address:</label>
-                    <input id="email-label" type="email" value="Email Address" name="Email Address"><br><br>
+            <form id="survey-form">
+                <div id="contact-details">
+                    <div>
+                        <label class="label" id="name-label">Name:</label>
+                        <input id="name" type="text" value="Name" name="Name" placeholder="name" required><br><br>
+                    </div>
+                    <div>
+                        <label class="label"  id="email-label">Email Address:</label>
+                        <input id="email" type="email" value="Email Address" name="Email Address" placeholder="email address" required><br><br>
+                    </div>
+                    <div>
+                        <label class="label"  id="number-label">Enter a Number:</label>
+                        <input id="number" type="number" value="Enter a Number" name="Enter a Number" placeholder="Enter number about 10" min="10" max="100"><br><br>
+                    </div>
                 </div>
-                <div id="number">
-                     <label>Enter a Number:</label>
-                     <input id="number-label" type="number" value="Enter a Number" name="Enter a Number"><br><br>
-                </div>
-            </div>
+                <div id="bottom-row">
+                    <div id="dropdown">
+                        <label class="label">Please rate the freeCodeCamp content:</label> <br><br>
+                        <select name="rating">
+                            <option value="excellent">Excellent</option>
+                            <option value="good">Good</option>
+                            <option value="poor">Poor</option>
+                        </select>
+                        <br><br>
+                    </div>
+                        <div class="maxl">
+                            <label class="label">Radio Buttons:</label><br>
+                            <label class="radio inline-radio"><input type="radio" name="human" value="male"><span>Male</span></label>
+                            <label class="radio inline-radio"><input type="radio" name="human" value="female"><span>Female</span></label>
+                            <label class="radio inline-radio"><input type="radio" name="human" value="adult"><span>Adult</span></label>
+                            <label class="radio inline-radio"><input type="radio" name="human" value="child"><span>Child</span></label>
+                            <br>
+                        </div>
+                        <div class="maxl">
+                            <label class="label">Checkboxes:</label><br>
+                            <label class="checkbox inline-checkbox"><input type="checkbox" value="dog"><span>Dog</span></label>
+                            <label class="checkbox inline-checkbox"><input type="checkbox" value="cat"><span>Cat</span></label>
+                            <label class="checkbox inline-checkbox"><input type="checkbox" value="bird"><span>Bird</span></label>
+                            <label class="checkbox inline-checkbox"><input type="checkbox" value="fish"><span>Fish</span></label>
+                            <br><br>
+                        </div>
+                        <div>
+                            <textarea rows="4" cols="50">
             
-            <div id="dropdown">
-                <label>Please rate the freeCodeCamp content:</label> <br><br>
-                <select name="rating">
-                    <option value="excellent">Excellent</option>
-                    <option value="good">Good</option>
-                    <option value="poor">Poor</option>
-                </select>
-                <br><br>
-            </div>
-            <div class="maxl">
-                <label>Radio Buttons</label><br>
-                <label class="radio inline"><input type="radio" name="human" value="male"><span>Male</span></label>
-                <label class="radio inline"><input type="radio" name="human" value="female"><span>Female</span></label>
-                <label class="radio inline"><input type="radio" name="human" value="adult"><span>Adult</span></label>
-                <label class="radio inline"><input type="radio" name="human" value="child"><span>Child</span></label>
+                            </textarea>
+                        </div>
+                        <br><br>
+                        <div>
+                            <input id="submit" type="submit">
+                        </div>
+
+                </div>
                 
-            </div>
-            <div class="maxl">
-                <label>Checkboxes</label><br>
-                <label class="checkbox inline"><input type="checkbox" name="" value="dog"><span>Dog</span></label>
-                <label class="checkbox inline"><input type="checkbox" name="" value="cat"><span>Cat</span></label>
-                <label class="checkbox inline"><input type="checkbox" name="" value="bird"><span>Bird</span></label>
-                <label class="checkbox inline"><input type="checkbox" name="" value="fish"><span>Fish</span></label>
-                
-            </div>
             
             
 
 
 
-        </form>
+            </form>
         </div>
     </body>
 </html>

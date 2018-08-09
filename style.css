@@ -7,7 +7,8 @@ html, body {
     margin: auto;
 }
 
-.container{
+.flex-container {
+    display: flex;
     width: auto;
     height: auto;
     margin: auto;
@@ -15,16 +16,22 @@ html, body {
     color: #000;
 }
 
-#title, #description{
-    border: solid 1px;
+#title-container {
+    align-items: flex-start;
     background-color: greenyellow;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
-#title h1 {
+#title {
     text-align: center;
 }
 
-label {
+#contact-details {
+
+}
+
+.label {
     display: block;
     float: left;
     width: 10em;
@@ -32,34 +39,54 @@ label {
     margin-right: 1em;
 }
 
-.maxl{
-    margin: 25px;
+/*#label-radio {
+    display: block;
+    float: left;
+    width: 1em;
+    text-align: right;
+    margin-right: 1em;
 }
 
-.inline {
+#label-checkbox {
+    display: block;
+    float: left;
+    width: 1em;
+    text-align: right;
+    margin-right: 1em;
+}*/
+
+.maxl{
+    margin: 35px;
+}
+
+.inline-radio {
     display: inline-block;
 }
 
-
+.inline-radio + .inline-radio {
+    margin-left:15px;
+}
 
 .radio {
-    color: #999;
-    font-size: 15px;
-    position: relative;
+    color:#999;
+    font-size:15px;
+    position:relative;
 }
 
-.radio span{
-    position:relative;
-    /*padding-left:20px;*/
+.inline-checkbox {
+    display: inline-block;
 }
-  
+
+.inline-checkbox + .inline-checkbox {
+    margin-left:15px;
+}
+
 .checkbox {
-    color: #999;
-    font-size: 15px;
-    position: relative;
-}
-    
-.checkbox span{
+    color:#999;
+    font-size:15px;
     position:relative;
-    /*padding-left:20px;*/
+}
+
+#bottom-row {
+    align-items: flex-end;
 }
