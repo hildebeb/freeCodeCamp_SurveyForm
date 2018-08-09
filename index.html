@@ -9,46 +9,35 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Survey Form</title>
     </head>
-    <body>
-        <div id="title">
-            <h1>Customer Satisfaction Survey</h1>
+    <body class="flex-grid">
+        <div class="flex-grid-body">
+            <main class="survey-content">
+                <h1 id="title">Survey Form</h1>
+                <p id="description">Great White North Web Developers would like to thank you for participating in this online survey.  Please provide acurate and truthful information to the following questions.</p>
+            <div class="form">
+                <form id="survey-form">
+                    <div>
+                        <label id="name-label">Name:</label>
+                        <input id="name" type="text" value="Name" name="Name" placeholder="name" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label id="email-label">Email Address:</label>
+                        <input id="email" type="email" value="Email Address" name="Email Address" placeholder="email address" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label id="number-label">Number:</label>
+                        <input id="number" type="number" value="Enter a Number" name="Enter a Number" placeholder="Enter number between 1 and 10000" min="1" max="10000">
+                    </div>
+                    <br>
+
+                </form>
+            </main>
+            <nav class="survey-nav"></nav>
+            <aside class="survey-aside"></aside>
+
         </div>
-        <div id="description">
-            <p>You are very important to us.  Please help us serve you better by taking a few minutes to tell us about the service you received today.  Fill in all personal information and then answer the following questions.</p>
-        </div>
-        <form id="survey-form">
-            <div id="contact-details">
-                <div id="name">
-                    <label>Name:</label>
-                    <input id="name-label" type="text" value="Name" name="Name"><br><br>
-                </div>
-                <div id="email">
-                    <label>Valid Email Address:</label>
-                    <input id="email-label" type="email" value="Email Address" name="Email Address"><br><br>
-                </div>
-                <div id="number">
-                     <label>Enter a Number:</label>
-                     <input id="number-label" type="number" value="Enter a Number" name="Enter a Number"><br><br>
-                </div>
-            </div>
-            
-            <div id="dropdown">
-                <label>Please rate with one of the below selections of your opinion of the freeCodeCamp content:</label> <br><br>
-                <select name="rating">
-                    <option value="excellent">Excellent</option>
-                    <option value="good">Good</option>
-                    <option value="poor">Poor</option>
-                </select>
-            </div>
-            <div>
-                <label>Radio Buttons</label>
-                <input type="radio" name=""
-            </div>
-            
-            
-
-
-
-        </form>
+        <footer></footer>
     </body>
 </html>
