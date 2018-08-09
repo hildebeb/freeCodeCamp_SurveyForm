@@ -36,8 +36,8 @@ html, body {
 }
   
 .survey-nav, .survey-aside {
-    /* 12em is the width of the columns */
-    flex: 0 0 24em;
+    /* 30em is the width of the columns */
+    flex: 0 0 30em;
 }
   
 .survey-nav {
