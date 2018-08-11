@@ -2,47 +2,33 @@
     --margin-left: 15px;
     --display: block;
     --float: left;
-    --width: 7em;
+    --width: 9em;
     --text-align: right;
     --margin-right: 1em;
 }
 
-html, body {
-    background-color: #f0f0f0;
-    color: #000;
-    font: normal 16px Arial, Helvetica, sana-serif;
-    /*width: 960px;
-    height: 100%;*/
+html,
+body {
     margin: 0;
     padding: 0;
-}
-
-.flex-grid {
-    display:flex;
-    min-height: 100vh;
+    display: flex;
+    /*min-height: 100vh;*/
+    height: 100%;
     flex-direction: column;
 }
 
-.flex-grid-body {
-    display: flex;
-    flex: 1;
-}
-
 .survey-content {
-    flex: 1;
-    background: rgb(37, 33, 33);
-    border-radius: 5%;
-    color: #fff;
-}
-  
-.survey-nav, .survey-aside {
-    /* 30em is the width of the columns */
-    flex: 0 0 30em;
-}
-  
-.survey-nav {
-    /* put the nav on the left */
-    order: -1;
+    max-width: 960px;
+    min-width: 720px;
+    /*height: 800px;*/
+    margin: auto;
+    background-color: rgba(194, 189, 189, 0.966);
+    color: #000;
+    box-shadow: 0 8px 16px 0 #000;
+    /*flex: 1;*/
+    flex: 1 0 auto;
+    /*border-radius: 20% 20% 0 0;*/
+    line-height: 1.8;
 }
 
 #title {
@@ -51,6 +37,7 @@ html, body {
 
 #description {
     margin-left: var(--margin-left);
+    margin-right: 15px;
 }
 
 #name-label {
@@ -71,6 +58,15 @@ html, body {
     margin-right: var(--margin-right);
 }
 
+#postalzipcode-label {
+    margin-left: var(--margin-left);
+    display: var(--display);
+    float: var(--float);
+    width: var(--width);
+    text-align: var(--text-align);
+    margin-right: var(--margin-right);
+}
+
 #number-label {
     margin-left: var(--margin-left);
     display: var(--display);
@@ -78,4 +74,74 @@ html, body {
     width: var(--width);
     text-align: var(--text-align);
     margin-right: var(--margin-right);
+}
+
+#dropdown-label {
+    margin-left: var(--margin-left);
+    display: var(--display);
+    float: var(--float);
+    width: var(--width);
+    text-align: var(--text-align);
+    margin-right: var(--margin-right);
+}
+
+#radio-label {
+    margin-left: var(--margin-left);
+    display: var(--display);
+    float: var(--float);
+    width: var(--width);
+    text-align: var(--text-align);
+    margin-right: var(--margin-right);
+}
+
+#checkbox-label {
+    margin-left: var(--margin-left);
+    display: var(--display);
+    float: var(--float);
+    width: var(--width);
+    text-align: var(--text-align);
+    margin-right: var(--margin-right);
+}
+
+#textbox-label {
+    margin-left: var(--margin-left);
+    display: var(--display);
+    float: var(--float);
+    width: var(--width);
+    text-align: var(--text-align);
+    margin-right: var(--margin-right);
+}
+
+#number-label {
+    margin-left: var(--margin-left);
+    display: var(--display);
+    float: var(--float);
+    width: var(--text-align);
+    text-align: var(--text-align);
+    margin-right: var(--margin-right);
+}
+
+#dropdown-label {
+    margin-left: var(--margin-left);
+    display: var(--display);
+    float: var(--float);
+    width: var(--text-align);
+    text-align: var(--text-align);
+    margin-right: var(--margin-right);
+}
+
+textarea {
+    /*resize:both;*/
+    max-height:200px;
+    min-height: 150px;
+    max-width: 600px;
+    min-width: 500px;
+}
+
+#submit-button {
+    margin-left: var(--margin-left);
+}
+
+.main {
+    background-color: rgb(216, 206, 206);
 }

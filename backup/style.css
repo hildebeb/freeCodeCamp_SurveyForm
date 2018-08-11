@@ -1,0 +1,81 @@
+:root {
+    --margin-left: 15px;
+    --display: block;
+    --float: left;
+    --width: 7em;
+    --text-align: right;
+    --margin-right: 1em;
+}
+
+html, body {
+    background-color: #f0f0f0;
+    color: #000;
+    font: normal 16px Arial, Helvetica, sana-serif;
+    /*width: 960px;
+    height: 100%;*/
+    margin: 0;
+    padding: 0;
+}
+
+.flex-grid {
+    display:flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.flex-grid-body {
+    display: flex;
+    flex: 1;
+}
+
+.survey-content {
+    flex: 1;
+    background: rgb(37, 33, 33);
+    border-radius: 5%;
+    color: #fff;
+}
+  
+.survey-nav, .survey-aside {
+    /* 30em is the width of the columns */
+    flex: 0 0 30em;
+}
+  
+.survey-nav {
+    /* put the nav on the left */
+    order: -1;
+}
+
+#title {
+    text-align: center;
+}
+
+#description {
+    margin-left: var(--margin-left);
+}
+
+#name-label {
+    margin-left: var(--margin-left);
+    display: var(--display);
+    float: var(--float);
+    width: var(--width);
+    text-align: var(--text-align);
+    margin-right: var(--margin-right);
+}
+
+#email-label {
+    margin-left: var(--margin-left);
+    display: var(--display);
+    float: var(--float);
+    width: var(--width);
+    text-align: var(--text-align);
+    margin-right: var(--margin-right);
+}
+
+#number-label {
+    margin-left: var(--margin-left);
+    display: var(--display);
+    float: var(--float);
+    width: var(--width);
+    text-align: var(--text-align);
+    margin-right: var(--margin-right);
+}

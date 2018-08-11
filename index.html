@@ -9,35 +9,97 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Survey Form</title>
     </head>
-    <body class="flex-grid">
-        <div class="flex-grid-body">
-            <main class="survey-content">
-                <h1 id="title">Survey Form</h1>
-                <p id="description">Great White North Web Developers would like to thank you for participating in this online survey.  Please provide acurate and truthful information to the following questions.</p>
-            <div class="form">
-                <form id="survey-form">
+    <body>
+        <main class="survey-content">
+            <h1 id="title">Questionnaire for Study</h1>
+            <p id="description">Customer Questionnaire and Client Satisfaction Banking Survey.</p>
+        <div class="form">
+            <form id="survey-form">
+                <fieldset>
+                    <legend>Personal Information</legend>
                     <div>
-                        <label id="name-label">Name:</label>
-                        <input id="name" type="text" value="Name" name="Name" placeholder="name" required>
+                        <label id="name-label">Full Name:</label>
+                        <input id="name" type="text" name="Name" placeholder="Full Name" required>
                     </div>
-                    <br>
                     <div>
                         <label id="email-label">Email Address:</label>
-                        <input id="email" type="email" value="Email Address" name="Email Address" placeholder="email address" required>
+                        <input id="email" type="email" name="Email Address" placeholder="Email Address" required>
                     </div>
-                    <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Please tick mark:</legend>
                     <div>
-                        <label id="number-label">Number:</label>
-                        <input id="number" type="number" value="Enter a Number" name="Enter a Number" placeholder="Enter number between 1 and 10000" min="1" max="10000">
+                        <label id="checkbox-label">AGE:</label>
+                        <input type="checkbox" name="" value="Below 30"><span>Below 30</span>
+                        <input type="checkbox" name="" value="30 - 40"><span>30 - 40</span>
+                        <input type="checkbox" name="" value="40 - 50"><span>40 - 50</span>
+                        <input type="checkbox" name="" value="50 and above"><span>50 and above</span>
                     </div>
-                    <br>
-
-                </form>
-            </main>
-            <nav class="survey-nav"></nav>
-            <aside class="survey-aside"></aside>
-
-        </div>
-        <footer></footer>
+                    <div>
+                        <label id="checkbox-label">GENDER:</label>
+                        <input type="checkbox" name="" value="Male"><span>Male</span>
+                        <input type="checkbox" name="" value="Female"><span>Female</span>
+                    </div>
+                    <div>
+                        <label id="checkbox-label">INCOME:</label>
+                        <input type="checkbox" name="" value="<200,000"><span><200,000</span>
+                        <input type="checkbox" name="" value="200,000-300,000"><span>200,000-300,000</span>
+                        <input type="checkbox" name="" value="200,000-300,000"><span>300,000-400,000</span>
+                        <input type="checkbox" name="" value="200,000>"><span>400,000></span>
+                    </div>
+                    <div>
+                        <label id="checkbox-label">OCCUPATION:</label>
+                        <input type="checkbox" name="" value="Salaried"><span>Salaried</span>
+                        <input type="checkbox" name="" value="Businessman"><span>Businessman</span>
+                        <input type="checkbox" name="" value="Professional"><span>Professional</span>
+                        <input type="checkbox" name="" value="Unionized"><span>Unionized</span>
+                    </div>
+                    <div>
+                        <label id="checkbox-label">QUALIFICATION:</label>
+                        <input type="checkbox" name="" value="Undergraduate"><span>Undergraduate</span>
+                        <input type="checkbox" name="" value="Graduate"><span>Graduate</span>
+                        <input type="checkbox" name="" value="Post-Graduate"><span>Post-Graduate</span>
+                    </div>
+                    <div>
+                        <label id="radio-label">MARITAL STATUS:</label>
+                        <input type="radio" name="human" value="Married"><span>Married</span>
+                        <input type="radio" name="human" value="Unmarried"><span>Unmarried</span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Banking Information</legend>
+                    <div id="dropdown">
+                        <label id="dropdown-label">Banking Institution:</label> 
+                        <select name="bankinstitution">
+                            <option value="RBC">RBC</option>
+                            <option value="Scotia Bank">Scotia Bank</option>
+                            <option value="TD">TD</option>
+                            <option value="Credit Union">Credit Union</option>
+                        </select>
+                        </div>
+                    <div>
+                        <label id="number-label">Time period current bank:</label>
+                        <input id="number" type="number" name="Email Address" placeholder="Time" min="0" max="100">
+                    </div>
+                    <div>
+                        <label id="checkbox-label">Products/services:</label>
+                        <input type="checkbox" name="" value="Fixed Deposits"><span>Fixed Deposits</span>
+                        <input type="checkbox" name="" value="Current Account"><span>Current Account</span>
+                        <input type="checkbox" name="" value="Other"><span>Other</span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Comments:</legend>
+                    <div>
+                        <textarea>
+            
+                        </textarea>
+                    </div>
+                </fieldset>
+                    <div id="submit-button">
+                        <input id="submit" type="submit" value="Submit" onclick="alert('Hello World!')">
+                    </div>
+            </form>
+        </main>
     </body>
 </html>
